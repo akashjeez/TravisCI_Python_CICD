@@ -9,7 +9,6 @@ adverbs = ('Remarkably', 'Enormously', 'Substantially', 'Significantly', 'Seriou
 
 verbs = ('Accelerates', 'Improves', 'Enhances', 'Revamps', 'Boosts')
 
-
 def sample(data: list, limit: int = 1) -> [str, list]:
 	if limit == 1:
 		return random.sample(data, limit)[0]
@@ -26,7 +25,6 @@ def generate_buzz() -> str:
 		buzz_terms[1] 
 	])
 	return phrase.title()
-
 
 if __name__ == '__main__':
 	print( generate_buzz() )
